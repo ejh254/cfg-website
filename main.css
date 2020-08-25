@@ -1,4 +1,3 @@
-/* STRUCTURE */
 * {
     box-sizing: border-box;
 }
@@ -37,9 +36,58 @@ h1 {
     font-size: 1em;
 }
 
+@media (min-width: 1110px) {
+    h1 {
+        letter-spacing: 10px;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 2em;
+    }
+}
+
+p {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    line-height: 30px;
+    padding-inline: 30px;
+}
+
+h3 {
+    color: darkgrey;
+    line-height: normal;
+    font-size: x-large;
+}
 
 
+@media screen and (max-width: 600px) {
+    .responsive {
+        width: 100%;
+        margin: 3px 0px;
+        flex: 100%;
+        max-width: 75%;
+    }
+}
 
+@media screen and (max-width: 800px) {
+    .responsive {
+        width: 100%;
+        margin: 6px 0px;
+        flex: 100%;
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .responsive {
+        width: 100%;
+        margin: 3px 0px;
+        flex: 100%;
+        max-width: 75%;
+    }
+}
+
+/* NAV */
 
 .nav-item-container {
     padding: 0;
@@ -70,6 +118,7 @@ li.nav-item a:hover {
     }
 }
 
+
 head, body, footer {
     max-width: 1800px;
     margin-left: auto;
@@ -78,24 +127,28 @@ head, body, footer {
 
 /* PICTURES */
 
+div.gallery:hover {
+    border: 5px solid lightslategray;
+}
 
 div.gallery img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    width: 75%;
-    height: auto;
+    width: 100%;
+    height: 600px;
+    padding: 10px;
 }
 
 div.desc {
     padding: 5px;
-    text-align: left;
+    text-align: center;
 }
 
 .responsive {
     padding: 5px 5px;
-    width: 50%;
+    width: 33%;
 }
 
 div.title {
@@ -111,5 +164,46 @@ div.title {
 .column {
     flex: 25%;
     padding: 5px;
+}
+
+/* INDEX 2 */
+
+div.titled {
+    font-style: italic;
+    font-size: 35px;
+}
+
+
+/* COMMENT */
+
+div.name {
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+#exampleFormControlInput1 {
+    width: 300px;
+    font-size: 15px;
+}
+
+div.comment {
+    padding-bottom: 5px;
+    padding-top: 15px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+#exampleFormControlTextarea1 {
+    width: 500px;
+    font-size: 15px;
+    height: 80px;
+}
+
+div.submit {
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
